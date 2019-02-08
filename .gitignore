@@ -26,6 +26,6 @@ dwsync.xml
 dw_php_codehinting.config
 *.mno
 
-#ignore Atom plugin ftp config files
+#ignore Atom plugin ftp config files moyeto
 .ftpignore
 .ftpconfig
