@@ -1,6 +1,6 @@
 'use strict';
 
-var applicatonTagLine = 'continuously falling forward into the light...Hello';
+
 var appData = {
   title: 'inside out - js',
   tagLine: 'continuously falling forward into the light...Hello'
@@ -45,11 +45,25 @@ function initializeApplication() {
   elFooter.innerHTML = '<h4>get excited about learning JavaScript...</h4>';
   elWrapper.appendChild(elFooter);
   elFooter.className = 'animated bounceInRight';
-  //Animation codes
+
+elMain.innerHTML += '<div style="width: 40%; margin: auto; padding:10px; margin-bottom: 20px;"><div class="progress" style="height: 20px;"><div id="loaderProgressBar" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div></div></div>';
 
 
+displayPB();
+  //Animation code
 
-
-
-
+}
+var timerCount = 0;
+function displayPB() {
+    if (timerCount <= 100) {
+        var x = (timerCount < 25) ? '' : (timerCount < 45) ? timerCount + '%' : (timerCount < 65) ? 'Loading ' + timerCount + '%' : 'Loading Application ' + timerCount + '%';
+        document.getElementById("loaderProgressBar").innerHTML = x;
+        document.getElementById('loaderProgressBar').setAttribute('aria-valuenow', timerCount);
+        document.getElementById('loaderProgressBar').style.width = timerCount + '%    ';
+        timerCount++;
+        setTimeout(displayPB, 50);
+    } else {
+        timerCount = 0;
+        return false;
+    }
 }
