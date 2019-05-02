@@ -7,5 +7,10 @@ inside out project version 400-0
 
 inside out project version 401-1
 -created the appData object
--moved the title & tag line variables in to appData and 
+-moved the title & tag line variables in to appData and
 -refactord the initializeApplication function
+
+inside out project version 401-2
+-added bootstrap to the index.html
+-added a DOM injection of the progressbar in the app.js
+-created the displayPB function in the app.js
