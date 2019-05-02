@@ -14,3 +14,8 @@ inside out project version 401-2
 -added bootstrap to the index.html
 -added a DOM injection of the progressbar in the app.js
 -created the displayPB function in the app.js
+
+insed out project version 402-0
+-added style.css and linked in index.html
+-added login form function and call after progress bar
+-added minimal validateLogin function to check for blank
