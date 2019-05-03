@@ -15,7 +15,20 @@ inside out project version 401-2
 -added a DOM injection of the progressbar in the app.js
 -created the displayPB function in the app.js
 
-insed out project version 402-0
+inside out project version 402-0
 -added style.css and linked in index.html
 -added login form function and call after progress bar
 -added minimal validateLogin function to check for blank
+
+inside out project version 403-0
+-index.html
+  -updated all hrefs/links to passive protocol
+  -moved style sheet link below animate and bootstrap to allow for custom styles to override all
+-style.css
+  -added styles for application interface - sidebar, wrapper, navigation, etc.
+-app.js
+  -added the aplicationuserinterface function wich defines the application user interface
+  -added the buildmenu function which returns the navigation menu and will increase in dynamic navigation building
+  -added the buildmain function which returns the primary content area and will evolve to return content dynamically
+  -replaced document wrte with call to applicationuserinterface function in the validatelogin function
+  -added the linkclicked function which is called by click events on anchor elements and returns dynamically driven results
